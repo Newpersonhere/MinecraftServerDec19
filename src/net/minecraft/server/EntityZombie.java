@@ -36,7 +36,7 @@ public class EntityZombie extends EntityMonster {
 		i.a(6, new class_tb(this, 1.0D, false));
 		bo.a(1, new class_uc(this, true, new Class[] { EntityPigZombie.class }));
 		bo.a(2, new class_uf(this, class_yu.class, true));
-		bo.a(2, new class_uf(this, EntityVillager.class, false));
+		bo.a(2, new class_uf(this, EntityVillager.class, true));
 		bo.a(2, new class_uf(this, EntityVillagerGolem.class, true));
 	}
 
