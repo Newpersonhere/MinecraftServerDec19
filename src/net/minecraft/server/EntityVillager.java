@@ -29,7 +29,7 @@ public class EntityVillager extends EntityAgeable implements class_aga, class_yo
 
 	public EntityVillager(class_ago var1, int var2) {
 		super(var1);
-		bJ = new class_qc("Items", false, 8);
+		bJ = new class_qc("Items", true, 8);
 		this.k(var2);
 		this.a(0.6F, 1.8F);
 		((class_ul) u()).b(true);
