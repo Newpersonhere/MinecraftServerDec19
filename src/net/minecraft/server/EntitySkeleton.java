@@ -31,7 +31,7 @@ public class EntitySkeleton extends EntityMonster implements class_ye {
 		i.a(6, new class_tm(this));
 		bo.a(1, new class_uc(this, false, new Class[0]));
 		bo.a(2, new class_uf(this, class_yu.class, true));
-		bo.a(3, new class_uf(this, EntityVillagerGolem.class, true));
+		bo.a(3, new class_uf(this, EntityVillagerGolem.class, false));
 		if ((var1 != null) && !var1.D) {
 			this.n();
 		}
