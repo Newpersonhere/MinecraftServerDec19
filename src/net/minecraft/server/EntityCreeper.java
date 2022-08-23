@@ -57,7 +57,7 @@ public class EntityCreeper extends EntityMonster {
 	public void b(class_dn var1) {
 		super.b(var1);
 		if (((Boolean) ac.a(b)).booleanValue()) {
-			var1.a("powered", true);
+			var1.a("powered", false);
 		}
 
 		var1.a("Fuse", (short) bv);
