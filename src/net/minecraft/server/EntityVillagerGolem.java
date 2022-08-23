@@ -95,7 +95,7 @@ public class EntityVillagerGolem extends class_vg {
 
 	@Override
 	public boolean a(Class var1) {
-		return cG() && class_yu.class.isAssignableFrom(var1) ? false : (var1 == EntityCreeper.class ? false : super.a(var1));
+		return cG() && class_yu.class.isAssignableFrom(var1) ? false : (var1 == EntityCreeper.class ? true : super.a(var1));
 	}
 
 	@Override
@@ -204,7 +204,7 @@ public class EntityVillagerGolem extends class_vg {
 					if ((var6 != null) && !var6.apply(var1x)) {
 						return false;
 					} else if (var1x instanceof EntityCreeper) {
-						return false;
+						return true;
 					} else {
 						if (var1x instanceof class_yu) {
 							double var2 = class_a_in_class_vp.this.f();
