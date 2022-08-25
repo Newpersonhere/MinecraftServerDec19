@@ -31,8 +31,8 @@ public class EntityZombie extends EntityMonster {
 	}
 
 	protected void n() {
-		i.a(4, new class_tz(this, EntityVillager.class, 1.0D, true));
-		i.a(4, new class_tz(this, EntityVillagerGolem.class, 1.0D, true));
+		i.a(4, new class_tz(this, EntityVillager.class, 1.0D, false));
+		i.a(4, new class_tz(this, EntityVillagerGolem.class, 1.0D, false));
 		i.a(6, new class_tb(this, 1.0D, false));
 		bo.a(1, new class_uc(this, true, new Class[] { EntityPigZombie.class }));
 		bo.a(2, new class_uf(this, class_yu.class, true));
@@ -293,11 +293,11 @@ public class EntityZombie extends EntityMonster {
 	public void b(class_dn var1) {
 		super.b(var1);
 		if (i_()) {
-			var1.a("IsBaby", true);
+			var1.a("IsBaby", false);
 		}
 
 		if (cI()) {
-			var1.a("IsVillager", true);
+			var1.a("IsVillager", false);
 		}
 
 		var1.a("ConversionTime", cJ() ? by : -1);
@@ -308,11 +308,11 @@ public class EntityZombie extends EntityMonster {
 	public void a(class_dn var1) {
 		super.a(var1);
 		if (var1.p("IsBaby")) {
-			this.n(true);
+			this.n(false);
 		}
 
 		if (var1.p("IsVillager")) {
-			this.o(true);
+			this.o(false);
 		}
 
 		if (var1.b("ConversionTime", 99) && (var1.h("ConversionTime") > -1)) {
