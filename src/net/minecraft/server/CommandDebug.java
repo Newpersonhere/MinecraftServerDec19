@@ -61,7 +61,7 @@ public class CommandDebug extends CommandAbstract {
 				long var6 = var3 - b;
 				int var8 = var5 - c;
 				this.a(var6, var8);
-				MinecraftServer.P().c.a = false;
+				MinecraftServer.P().c.a = true;
 				a(var1, this, "commands.debug.stop", new Object[] { Float.valueOf(var6 / 1000.0F), Integer.valueOf(var8) });
 			}
 
